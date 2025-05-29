@@ -3,40 +3,40 @@ body{
     display: flex;
     justify-content: center;
     font-family: 'Roboto';
-
 }
 .container{
     width: 450px;
     height: fit-content;
     background-color: white;
     border-radius: 8px;
-    overflow: hidden;
-   
+    overflow: hidden; 
 }
-
 .header-post{
     height: 60px;
-    display: inline-flex;
-    width: 450px;
+    display: flex;
     background-color: white;
     align-items: center;
-    
+    justify-content: space-between;
 }
-.header-post p{
-  padding-right: 20rem;
+.header-post img{
+    height: 26px;
+    width: 26px;
+    object-fit: contain;
+    padding:  5px ;
 }
 .header-post i{
     padding: 20px;
 }
-
-
+.header-post p{
+   flex-grow: 4;
+   flex-direction: row;
+}
 .photo-post{
     height: 450px;
     width: 450px;
     background-image: url(https://m.media-amazon.com/images/I/71Zz2ufujtL.jpg);
     background-size: contain;
 }
-
 .description-post{
     background-color: white;
     
@@ -44,32 +44,18 @@ body{
     color: black;
     padding: 10px
 }
-
 i{
     font-size: 1.5rem;
     padding: 2px;
-   
 }
-
 .icon-left{
-    display: inline-flex;
+    display:flex;
     align-items: center;
-    justify-content: center;
-    
-
+    justify-content: space-between;
 }
 .icon-left i{
    margin: 5px;
-    
-
 }
-
-
-
-
 .icon-right{
-    margin-left: 270px;
-    padding: 10px;
-    
+    padding: 10px;   
 }
-
